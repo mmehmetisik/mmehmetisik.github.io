@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehmet ISIK - Data Scientist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg'); /* Arka plan resmi */
+            background-size: cover;
+            background-attachment: fixed; /* Sabit arka plan */
+            text-align: center;
+        }
+        header {
+            background-color: #008cba; /* Canlı mavi renk */
+            color: #fff;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: -100px; /* Başlangıç pozisyonu yukarıda */
+            z-index: 1000;
+            transition: top 0.5s ease;
+        }
+        header.show {
+            top: 0; /* Aşağı kaydırma */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            margin-top: 150px; /* Header için başlangıç boşluğu */
+            transition: margin-top 1s ease-in-out; /* Animasyon ekleme */
+        }
+        .container.shifted {
+            margin-top: 250px; /* Header aşağı kayınca içeriklerin kayması */
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .profile img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Resim için gölge */
+        }
+        .profile .about {
+            margin-left: 20px;
+            text-align: left;
+            max-width: 600px;
+        }
+        .profile .about h2 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #008cba; /* Canlı mavi renk */
+        }
+        .profile .about p {
+            font-size: 1.2em;
+        }
+        .social-icons {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 10px 0;
+            text-decoration: none;
+            color: #333;
+            animation: blink 1.5s infinite; /* İconların yanıp sönme efekti */
+            transition: transform 0.3s, opacity 0.3s;
+        }
+        .social-icons a:hover {
+            animation: none; /* Hover ile animasyonu durdurma */
+            transform: scale(1.1);
+        }
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+        }
+        .circles {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: transform 0.3s, background-color 0.3s;
+            margin: 10px;
+            animation: wave 2s infinite; /* Balonların meksika dalgası efekti */
+        }
+        .circle:hover {
+            animation: none; /* Hover ile animasyonu durdurma */
+            transform: scale(1.1);
+            background-color: #555;
+        }
+        .circle:nth-child(1) {
+            background-color: #ff6347; /* Tomato */
+            color: #fff;
+        }
+        .circle:nth-child(2) {
+            background-color: #4682b4; /* SteelBlue */
+            color: #fff;
+        }
+        .circle:nth-child(3) {
+            background-color: #32cd32; /* LimeGreen */
+            color: #fff;
+        }
+        .circle:nth-child(4) {
+            background-color: #ffa500; /* Orange */
+            color: #fff;
+        }
+        .download-cv {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #444;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .download-cv:hover {
+            background-color: #008cba;
+            transform: scale(1.1);
+        }
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+            }
+            .profile .about {
+                margin-left: 0;
+                text-align: center;
+            }
+            .social-icons {
+                align-items: center;
+            }
+        }
+
+        /* Animasyonlar */
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+        @keyframes wave {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>Mehmet ISIK</h1>
+        <p>Data Scientist</p>
+    </header>
+    <div class="container" id="container">
+        <div class="profile">
+            <img src="4,5x6.jpg" alt="Mehmet ISIK">
+            <div class="about">
+                <h2>Hello</h2>
+                <p>Hello, I'm Mehmet ISIK. I have experience in Data Science, Machine Learning, and AWS cloud technologies. I have successfully carried out projects that involve analyzing complex data sets and integrating predictive models into business strategies.</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/mehmetisik4601/" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://www.kaggle.com/mehmetisik" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png" alt="Kaggle"></a>
+                <a href="https://github.com/mmehmetisik" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/github.png" alt="GitHub"></a>
+                <a href="https://medium.com/@mmehmetisik" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/medium-monogram.png" alt="Medium"></a>
+            </div>
+        </div>
+        <div class="circles">
+            <a href="education.html" class="circle">Education</a>
+            <a href="experience.html" class="circle">Experience</a>
+            <a href="training.html" class="circle">Training</a>
+            <a href="projects.html" class="circle">Projects</a>
+        </div>
+        <a href="MEHMET_ISIK_Resume.pdf" class="download-cv" download>Download CV</a>
+    </div>
+    <footer>
+        <p>&copy; 2024 Mehmet ISIK. All rights reserved.</p>
+    </footer>
+    <script>
+        // Sayfa yüklendiğinde header ve container animasyonlarını başlat
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.getElementById('header').classList.add('show');
+                document.getElementById('container').classList.add('shifted');
+            }, 500); // 0.5 saniye gecikme
+        });
+    </script>
+</body>
+</html>
