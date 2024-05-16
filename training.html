@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehmet ISIK - Training</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeInContainer 1s forwards;
+        }
+        h1 {
+            color: #32cd32; /* Training sayfası için yeşil renk */
+            animation: fadeIn 1s forwards;
+        }
+        .training-item {
+            text-align: left;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: transform 0.5s, opacity 0.5s;
+        }
+        .training-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .training-item h2 {
+            color: #32cd32;
+            margin: 0 0 10px 0;
+        }
+        .training-item p {
+            margin: 5px 0;
+            font-size: 1em;
+        }
+        a {
+            color: #32cd32;
+            text-decoration: none;
+            opacity: 0;
+            animation: fadeInLink 1s forwards;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animasyonlar */
+        @keyframes fadeInContainer {
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInLink {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Training</h1>
+        <div class="training-item" style="animation: fadeIn 0.5s forwards 0.5s;">
+            <h2>VBO</h2>
+            <p><strong>Data Engineering Bootcamp</strong></p>
+            <p>2024 - 2025</p>
+        </div>
+        <div class="training-item" style="animation: fadeIn 0.5s forwards 1s;">
+            <h2>Miul</h2>
+            <p><strong>Data Scientist and Machine Learning Bootcamp</strong></p>
+            <p>2022 - 2023</p>
+        </div>
+        <div class="training-item" style="animation: fadeIn 0.5s forwards 1.5s;">
+            <h2>Miul</h2>
+            <p><strong>AWS Cloud Technical Bootcamp</strong></p>
+            <p>2023</p>
+        </div>
+        <div class="training-item" style="animation: fadeIn 0.5s forwards 2s;">
+            <h2>Miul</h2>
+            <p><strong>Data Engineer Path</strong></p>
+            <p>2023</p>
+        </div>
+        <a href="index.html" style="animation: fadeInLink 0.5s forwards 2.5s;">Ana Sayfaya Dön</a>
+    </div>
+</body>
+</html>

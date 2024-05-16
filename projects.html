@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehmet ISIK - Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeInContainer 1s forwards;
+        }
+        h1 {
+            color: #ffa500; /* Projects sayfası için turuncu renk */
+            animation: fadeIn 1s forwards;
+        }
+        .project-item {
+            text-align: left;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: transform 0.5s, opacity 0.5s;
+        }
+        .project-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .project-item h2 {
+            color: #ffa500;
+            margin: 0 0 10px 0;
+        }
+        .project-item p {
+            margin: 5px 0;
+            font-size: 1em;
+        }
+        a {
+            color: #ffa500;
+            text-decoration: none;
+            opacity: 0;
+            animation: fadeInLink 1s forwards;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animasyonlar */
+        @keyframes fadeInContainer {
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInLink {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Projects</h1>
+        <div class="project-item" style="animation: fadeIn 0.5s forwards 0.5s;">
+            <h2>Data Science Project</h2>
+            <p><strong>Classification</strong></p>
+            <p>Customer segmentation with rule-based Classification</p>
+        </div>
+        <div class="project-item" style="animation: fadeIn 0.5s forwards 1s;">
+            <h2>CRM Analytics</h2>
+            <p><strong>RFM Analysis with E-Commerce Data</strong></p>
+            <p>CLTV Prediction with customer data</p>
+        </div>
+        <div class="project-item" style="animation: fadeIn 0.5s forwards 1.5s;">
+            <h2>Recommendation Systems</h2>
+            <p><strong>Armut ARI, Recommender</strong></p>
+            <p>Hybrid Recommender System</p>
+        </div>
+        <div class="project-item" style="animation: fadeIn 0.5s forwards 2s;">
+            <h2>A\B Testing</h2>
+            <p><strong>Rating Product&Sorting Reviews in Amazon</strong></p>
+            <p>AB Testing with e-commerce website</p>
+        </div>
+        <div class="project-item" style="animation: fadeIn 0.5s forwards 2.5s;">
+            <h2>Machine Learning</h2>
+            <p><strong>Diabetes prediction with a logistic regression model</strong></p>
+            <p>Real house prediction with advanced decision trees like CART, Random Forest, GBM, XGBoost, etc.</p>
+            <p>Customer Segmentation with Unsupervised Learning using K-Means, Hierarchical Clustering, and Principal Component Analysis (PCA) methods</p>
+            <p>Churn Prediction with ML models</p>
+            <p>Airbnb NYC House Price Prediction with ML Models</p>
+            <p>Titanic Survival Prediction with ML Models</p>
+            <p>Baseball Salary Prediction with ML Models</p>
+            <p>Water Quality Prediction with ML Models</p>
+            <p>Data Science Salary Prediction with ML Models</p>
+            <p>U.S. Farm Biogas Production Prediction with ML Models (Dairy Cows and Livestock Farms)</p>
+            <p>Airline Passenger Forecasting (Time Series)</p>
+            <p>Natural Language Processing (NLP)</p>
+        </div>
+        <div class="project-item" style="animation: fadeIn 0.5s forwards 3s;">
+            <h2>Data Analysis</h2>
+            <p><strong>Global Methane Emissions: Countries & Sectors</strong></p>
+            <p>General Review of Biogas in the U.S. Farms</p>
+            <p>Solar Power Generation Visualization Analysis</p>
+            <p>Analysis of Landfills in America</p>
+            <p>Global Analysis of Renewable Energy Sources: Solar, Wind, Hydroelectric, and Beyond</p>
+        </div>
+        <div class="project-item" style="animation: fadeIn 0.5s forwards 3.5s;">
+            <h2>AWS Project</h2>
+            <p><strong>End-to-End Data Analytics Solution for 24/7 Operating Facilities</strong></p>
+        </div>
+        <div class="project-item" style="animation: fadeIn 0.5s forwards 4s;">
+            <h2>Competition</h2>
+            <p><strong>Artificial Intelligence-Based Recommendation System for İş Bankası Mobile Application: Personalized Menu Suggestions</strong></p>
+            <p>E-Commerce Forecasting ML-Driven Merchant Trends For Iyzico</p>
+        </div>
+        <div class="project-item" style="animation: fadeIn 0.5s forwards 4.5s;">
+            <h2>Plant Manager</h2>
+            <p><strong>Karataş Wastewater Treatment Plant (MBR) Control and Commissioning</strong></p>
+            <p>Saimbeyli Wastewater Treatment Plant Control and Commissioning</p>
+            <p>Ceyhan Wastewater Treatment Plant Control and Commissioning</p>
+        </div>
+        <a href="index.html" style="animation: fadeInLink 0.5s forwards 5s;">Ana Sayfaya Dön</a>
+    </div>
+</body>
+</html>

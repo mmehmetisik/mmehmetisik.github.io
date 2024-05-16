@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehmet ISIK - Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeInContainer 1s forwards;
+        }
+        h1 {
+            color: #4682b4; /* Experience sayfası için mavi renk */
+            animation: fadeIn 1s forwards;
+        }
+        .experience-item {
+            text-align: left;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: transform 0.5s, opacity 0.5s;
+        }
+        .experience-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .experience-item h2 {
+            color: #4682b4;
+            margin: 0 0 10px 0;
+        }
+        .experience-item p {
+            margin: 5px 0;
+            font-size: 1em;
+        }
+        a {
+            color: #4682b4;
+            text-decoration: none;
+            opacity: 0;
+            animation: fadeInLink 1s forwards;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animasyonlar */
+        @keyframes fadeInContainer {
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInLink {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Experience</h1>
+        <div class="experience-item" style="animation: fadeIn 0.5s forwards 0.5s;">
+            <h2>Adana ASKI General Directorate</h2>
+            <p><strong>Data Scientist</strong></p>
+            <p>2023 - Present</p>
+            <p>Responsibilities include data collection, processing, and analysis; predictive modeling; and data visualization.</p>
+        </div>
+        <div class="experience-item" style="animation: fadeIn 0.5s forwards 1s;">
+            <h2>Adana ASKI General Directorate</h2>
+            <p><strong>Plant Manager</strong></p>
+            <p>2016 - 2023</p>
+            <p>Oversaw operations and maintenance at Ceyhan Wastewater Treatment and Biogas Plant.</p>
+        </div>
+        <div class="experience-item" style="animation: fadeIn 0.5s forwards 1.5s;">
+            <h2>Adana ASKI General Directorate</h2>
+            <p><strong>Maintenance Specialist</strong></p>
+            <p>2015 - 2023</p>
+            <p>Handled equipment maintenance, pump repairs, and machinery operation.</p>
+        </div>
+        <div class="experience-item" style="animation: fadeIn 0.5s forwards 2s;">
+            <h2>Kipas Paper Industry</h2>
+            <p><strong>Mechanical Engineering Expert</strong></p>
+            <p>2015</p>
+            <p>Played a key role in boosting the facility's performance and operations.</p>
+        </div>
+        <div class="experience-item" style="animation: fadeIn 0.5s forwards 2.5s;">
+            <h2>ÇMS Textile</h2>
+            <p><strong>Mechanical Engineer</strong></p>
+            <p>2014 - 2015</p>
+            <p>Played a key role in boosting the facility's performance and operations.</p>
+        </div>
+        <a href="index.html" style="animation: fadeInLink 0.5s forwards 3s;">Ana Sayfaya Dön</a>
+    </div>
+</body>
+</html>
