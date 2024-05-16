@@ -39,6 +39,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
         }
         .profile img {
             width: 300px;
@@ -81,6 +83,7 @@
         .circles {
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
             margin: 20px 0;
         }
         .circle {
@@ -93,6 +96,7 @@
             font-size: 1.2em;
             text-decoration: none;
             transition: transform 0.3s;
+            margin: 10px;
         }
         .circle:hover {
             transform: scale(1.1);
@@ -125,6 +129,18 @@
         .download-cv:hover {
             background-color: #008cba;
             transform: scale(1.1);
+        }
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+            }
+            .profile .about {
+                margin-left: 0;
+                text-align: center;
+            }
+            .social-icons {
+                align-items: center;
+            }
         }
     </style>
 </head>
